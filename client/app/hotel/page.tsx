@@ -1,4 +1,4 @@
-import { MapPin, Star } from 'lucide-react'
+import { MapPin, Star, Search, SlidersHorizontal, ZoomIn, Share, Heart, LogIn, LogOut, Wifi, Waves, Dumbbell, Sparkles, Utensils, CircleParking, Eye, Ruler, Building2, CheckCircle, Navigation, Lock } from 'lucide-react'
 import React from 'react'
 
 export default function Hotel() {
@@ -9,7 +9,7 @@ export default function Hotel() {
                 <div className="max-w-container-max mx-auto px-gutter flex flex-wrap items-center justify-between gap-md">
                     <div
                         className="flex items-center gap-md bg-surface-container-low px-lg py-2 rounded-full border border-outline-variant shadow-sm flex-1 max-w-2xl cursor-pointer hover:bg-surface-container transition-colors">
-                        <span className="material-symbols-outlined text-primary" data-icon="search">search</span>
+                        <Search className="text-primary" />
                         <div className="flex flex-col">
                             <span className="text-label-sm font-bold">Paris, France</span>
                             <span className="text-label-sm text-on-surface-variant">Sep 12 - Sep 18 • 2 Guests</span>
@@ -17,7 +17,7 @@ export default function Hotel() {
                     </div>
                     <button
                         className="md:flex hidden items-center gap-sm px-lg py-2 rounded-full border border-outline text-label-md font-bold hover:bg-surface-container-low transition-all">
-                        <span className="material-symbols-outlined" data-icon="tune">tune</span>
+                        <SlidersHorizontal />
                         Modify Search
                     </button>
                 </div>
@@ -34,8 +34,7 @@ export default function Hotel() {
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVfP-5xc9NHrXQhrfgj3V57Zl8WrQQ2qxI5k7QFC-_yQT2Pvh8-Rog2_iHZLsiS49mibfr7rLIGq5xGfPZTfzIfau55cAa2kWJNr2Oxdtk4DE3DA1b-tknF6Fv-JX5R_pkw6NVoJE1zbzf4OFGppfydnhOPH7H2PrMCQTWb5rIrA0ZPer4Cw1wkce3dX3ojkp8Na4Ev8Z5hiJm_I3sB4ghlPaluUezgtuanhnaFFt28IgAS7fXo87ck5IDT5G0m4bG6kyBE1uMkyR" />
                         <div
                             className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-lg">
-                            <span className="text-white font-label-md flex items-center gap-sm"><span
-                                className="material-symbols-outlined" data-icon="zoom_in">zoom_in</span> View Image</span>
+                            <span className="text-white font-label-md flex items-center gap-sm"><ZoomIn /> View Image</span>
                         </div>
                     </div>
                     <div className="lg:col-span-2 grid grid-cols-2 grid-rows-2 gap-md h-full">
@@ -78,7 +77,7 @@ export default function Hotel() {
                             className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight mb-sm">
                             Hôtel de Lumière</h1>
                         <p className="flex items-center gap-xs text-on-surface-variant font-body-md mb-md">
-                            <span className="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+                            <MapPin className="text-primary" />
                             8 Avenue de la Bourdonnais, 7th Arr., 75007 Paris, France
                         </p>
                         <div className="flex items-center gap-md">
@@ -91,12 +90,12 @@ export default function Hotel() {
                             </div>
                             <button
                                 className="flex items-center gap-sm text-primary font-bold hover:underline underline-offset-4 transition-all">
-                                <span className="material-symbols-outlined" data-icon="share">share</span>
+                                <Share />
                                 Share
                             </button>
                             <button
                                 className="flex items-center gap-sm text-primary font-bold hover:underline underline-offset-4 transition-all">
-                                <span className="material-symbols-outlined" data-icon="favorite">favorite</span>
+                                <Heart />
                                 Save
                             </button>
                         </div>
@@ -126,14 +125,14 @@ export default function Hotel() {
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg border-t border-outline-variant pt-lg">
                                 <div className="flex gap-md">
-                                    <span className="material-symbols-outlined text-primary" data-icon="login">login</span>
+                                    <LogIn className="text-primary" />
                                     <div>
                                         <h4 className="font-bold text-label-md">Check-in</h4>
                                         <p className="text-on-surface-variant text-label-md">From 3:00 PM</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-md">
-                                    <span className="material-symbols-outlined text-primary" data-icon="logout">logout</span>
+                                    <LogOut className="text-primary" />
                                     <div>
                                         <h4 className="font-bold text-label-md">Check-out</h4>
                                         <p className="text-on-surface-variant text-label-md">Until 12:00 PM</p>
@@ -147,30 +146,27 @@ export default function Hotel() {
                             <h2 className="font-headline-md mb-md">Popular Amenities</h2>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-lg">
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant" data-icon="wifi">wifi</span>
+                                    <Wifi className="text-on-surface-variant" />
                                     <span className="text-body-md">Free High-speed WiFi</span>
                                 </div>
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant" data-icon="pool">pool</span>
+                                    <Waves className="text-on-surface-variant" />
                                     <span className="text-body-md">Indoor Heated Pool</span>
                                 </div>
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant"
-                                        data-icon="fitness_center">fitness_center</span>
+                                    <Dumbbell className="text-on-surface-variant" />
                                     <span className="text-body-md">24/7 Fitness Center</span>
                                 </div>
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant" data-icon="spa">spa</span>
+                                    <Sparkles className="text-on-surface-variant" />
                                     <span className="text-body-md">Luxury Spa &amp; Wellness</span>
                                 </div>
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant"
-                                        data-icon="restaurant">restaurant</span>
+                                    <Utensils className="text-on-surface-variant" />
                                     <span className="text-body-md">Michelin-starred Dining</span>
                                 </div>
                                 <div className="flex items-center gap-md">
-                                    <span className="material-symbols-outlined text-on-surface-variant"
-                                        data-icon="local_parking">local_parking</span>
+                                    <CircleParking className="text-on-surface-variant" />
                                     <span className="text-body-md">Valet Parking</span>
                                 </div>
                             </div>
@@ -202,17 +198,14 @@ export default function Hotel() {
                                         </div>
                                         <div className="grid grid-cols-2 gap-sm mb-lg">
                                             <div className="flex items-center gap-xs text-on-surface-variant text-label-md">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="visibility">visibility</span> City view
+                                                <Eye className="text-sm" /> City view
                                             </div>
                                             <div className="flex items-center gap-xs text-on-surface-variant text-label-md">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="square_foot">square_foot</span> 35m²
+                                                <Ruler className="text-sm" /> 35m²
                                             </div>
                                             <div
                                                 className="flex items-center gap-xs text-secondary font-bold text-label-md col-span-2">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="restaurant">restaurant</span> Breakfast included
+                                                <Utensils className="text-sm" /> Breakfast included
                                             </div>
                                         </div>
                                     </div>
@@ -250,17 +243,14 @@ export default function Hotel() {
                                         </div>
                                         <div className="grid grid-cols-2 gap-sm mb-lg">
                                             <div className="flex items-center gap-xs text-on-surface-variant text-label-md">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="apartment">apartment</span> Eiffel Tower view
+                                                <Building2 className="text-sm" /> Eiffel Tower view
                                             </div>
                                             <div className="flex items-center gap-xs text-on-surface-variant text-label-md">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="square_foot">square_foot</span> 50m²
+                                                <Ruler className="text-sm" /> 50m²
                                             </div>
                                             <div
                                                 className="flex items-center gap-xs text-success font-bold text-label-md col-span-2 text-green-600">
-                                                <span className="material-symbols-outlined text-sm"
-                                                    data-icon="check_circle">check_circle</span> Free cancellation
+                                                <CheckCircle className="text-sm" /> Free cancellation
                                             </div>
                                         </div>
                                     </div>
@@ -350,7 +340,7 @@ export default function Hotel() {
                             <div className="p-lg">
                                 <h2 className="font-headline-md mb-md">Location</h2>
                                 <p className="text-on-surface-variant font-body-md flex items-center gap-sm mb-lg">
-                                    <span className="material-symbols-outlined text-primary" data-icon="near_me">near_me</span>
+                                    <Navigation className="text-primary" />
                                     8 Avenue de la Bourdonnais, 75007 Paris. Excellent location - 5 min walk to Eiffel Tower.
                                 </p>
                             </div>
@@ -417,7 +407,7 @@ export default function Hotel() {
                             Complete Booking
                         </button>
                         <div className="flex items-center gap-md justify-center py-2 text-label-sm text-on-surface-variant">
-                            <span className="material-symbols-outlined text-green-600" data-icon="lock">lock</span>
+                            <Lock className="text-green-600" />
                             Secure payment process
                         </div>
                     </aside>
